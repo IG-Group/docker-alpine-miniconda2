@@ -1,4 +1,4 @@
-FROM davidgibbsig/alpine-glibc:alpine-3.9
+FROM davidgibbsig/alpine-glibc:latest
 
 ENV CONDA_DIR="/opt/conda"
 ENV PATH="$CONDA_DIR/bin:$PATH"

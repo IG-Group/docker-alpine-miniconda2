@@ -6,8 +6,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t davidgibbsig/docker-alpine-miniconda2 .
+  - docker build -t iggroup/docker-alpine-miniconda2 .
 
 script:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push davidgibbsig/docker-alpine-miniconda2
+  - docker push iggroup/docker-alpine-miniconda2

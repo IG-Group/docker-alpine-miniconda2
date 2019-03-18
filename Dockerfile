@@ -8,6 +8,7 @@ RUN CONDA_VERSION="4.5.12" && \
     CONDA_MD5_CHECKSUM="4be03f925e992a8eda03758b72a77298" && \
     \
     apk add --no-cache --virtual=.build-dependencies wget ca-certificates bash && \
+    apk add --no-cache libstdc++ && \
     \
     mkdir -p "$CONDA_DIR" && \
     wget "http://repo.continuum.io/miniconda/Miniconda2-${CONDA_VERSION}-Linux-x86_64.sh" -O miniconda.sh && \
